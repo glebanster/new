@@ -1,0 +1,35 @@
+<html>
+    <head> 
+        <title>мы вас любим</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+    </head>
+    <body>
+      <script>
+        function lines() {
+          let sizeW = Math.random() * 22;
+          let duration = Math.random() * 3;
+          let e = document.createElement("div");
+          e.setAttribute("class", "circle");
+          document.body.appendChild(e);
+          e.style.width = 12 + sizeW + "px";
+          e.style.left = Math.random() * +innerWidth + "px";
+          e.style.animationDuration = 2 + duration + "s";
+
+        setTimeout(function () {
+          document.body.removeChild(e);
+        }, 5000);
+      }
+      setInterval(function () {
+        lines();
+      }, 200);
+      </script>
+
+      <div id = "wrapper">
+        <h1>2 Контрольная точка</h1>
+        <span>Вы отлично справляетесь! Следующий qr код будет в месте где лера(темная) 
+        сказала никте что их фотографируют муравьи<span>
+      </div>
+      
+    </body>
+</html>
